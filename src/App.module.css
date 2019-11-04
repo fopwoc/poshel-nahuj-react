@@ -1,0 +1,92 @@
+/* цвыет эпл) 181830 */
+
+.App {
+    background-color: black;
+    background-image: linear-gradient(180deg, #181830 231%, #484878 154%, #303060 137%, #606090 115%, #001818 91%, #000000 81%, #183048 76%, #7878a8 62%, #9090a8 47%);
+    color: white;
+
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    font-weight: lighter;
+    font-size: xx-large;
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 1fr 3fr 1fr;
+}
+
+.Content {
+    display: flex;
+    flex-flow: column nowrap;
+    place-content: center;
+    align-items: center;
+
+    backdrop-filter: blur(10px);
+}
+
+.Nahuj {
+    animation: loal 2s infinite;
+}
+
+@keyframes loal {
+    from {
+        color: red;
+        font-size: larger;
+        place-self: center
+    }
+    25% {
+        color: green;
+        font-size: xx-large;
+        place-self: flex-start
+    }
+    50% {
+        color: yellow;
+        font-size: small;
+        place-self: center;
+        justify-self: flex-start;
+    }
+    75% {
+        color: white;
+        font-size: xx-large;
+        place-self: flex-end
+    }
+    /*90% {color: purple; transform: scale(2)}*/
+    to {
+        color: red;
+        font-size: larger;
+        place-self: center
+    }
+}
+
+@keyframes bgloop {
+    from {
+        background-image: linear-gradient()
+    }
+    to {
+        color: red;
+    }
+}
+
+.Footer {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: 1rem;
+}
+
+.FooterLink {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+    font-weight: 200;
+    font-size: small;
+}
+
+.FooterLink:link, .FooterLink:hover, .FooterLink:visited, .FooterLink:active {
+    text-decoration: none;
+    color: white;
+}
+
