@@ -10,7 +10,7 @@ const App: React.FC = () => {
             <div/>
             <div className={styles.Content}>
                 <div className={styles.Nahuj}>
-                    иди нахуй
+                    пошел нахуй
                 </div>
             </div>
             <div/>
